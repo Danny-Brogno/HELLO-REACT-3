@@ -1,3 +1,103 @@
+:root {
+  --normal-black: #000;
+  --normal-white: #FFF;
+  --roman-red: #CD0000;
+  --scottish-blue: #0065bd;
+  --eleganBlue: #427ed1;
+  --lighter-blue: #4c8be0;
+  --darker-yellow: #ffaf00;
+  --coral-red: #FF7F50;
+  --emerald-green: #00C957;
+  --slate-blue: #7171C6;
+  --medium-purple: #8968CD;
+  --midnight-blue: #191970;
+  --aqua: #00FFFF;
+  --ruby-red: #e0115f;
+  --scarlet-red: #ff2400;
+  --JavaScript-yellow: #F5D733;
+  --light-grey: rgb(113, 113, 113);
+  --elegant-grey: rgb(49, 44, 36);
+  --dark-grey: rgb(27, 31, 36);
+  --background: #1b1f24;
+  --cool-grey: #3e3e3e;
+  --pearl-white: #E9DCC9;
+  --M-hotels-grey: rgb(30, 29, 27);
+  --M-hotels-gold: #eabb72;
+  --M-hotels-elegant-rose: #B03653;
+}
+
+/* DEFAULT CLASSES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Merienda", serif;
+  background-color: var(--normal-black);
+  color: var(--normal-white);
+  height:100%;
+  width: 100%;
+}
+
+
+/* ALL PURPOSE CLASSES */
+
+.flex {
+  display: flex;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.blur {
+  filter: blur(8px);
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+.blur {
+  filter: blur(8px);
+}
+
+
+/* ---------------------------------- */
+
 .App {
   text-align: center;
 }
