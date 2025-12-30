@@ -21,6 +21,7 @@ function App() {
   }
 
   console.log(inputCustomer);
+  console.log(inputCustomer);
   
   return (
     <div className="App">
