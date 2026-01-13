@@ -135,3 +135,11 @@ body {
     transform: rotate(360deg);
   }
 }
+
+#result {
+  width: 100%;
+}
+
+#result thead tr:first-of-type {
+  
+}

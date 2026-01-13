@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import {Header} from './components/header.js';
 import {Main} from './components/main.js';
 import {OutputData} from './components/outputData.jsx';
+// import {OutputData} from './components/userinput.jsx';
 
 function App() {
   
@@ -16,19 +17,20 @@ function App() {
   function callUserInput(inputIde, val) {
     setInputCustomer((prev)=>({
       ...prev,
-      [inputIde]:val
+      [inputIde]: + val
     }))
   }
 
-  console.log(inputCustomer);
-  console.log(inputCustomer);
+
+  useEffect(() => {
+    console.log("Updated state:", inputCustomer);
+  }, [inputCustomer]); // This runs every time inputCustomer changes
   
   return (
     <div className="App">
       <Header />
-      <Main inputCustomer={inputCustomer} 
-      onChangeCustInput={callUserInput} />
-      <OutputData inputValue={inputCustomer}/>
+      <Main inputCustomer={inputCustomer} onChangeCustInput={callUserInput} />
+      <OutputData inputVal={inputCustomer} onChangeCustInput={callUserInput}/>
     </div>
   );
 }

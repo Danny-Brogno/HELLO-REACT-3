@@ -24,3 +24,9 @@ export function calculateInvestmentResults({
 }
 
 
+export const formatter = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+  minimumFracionDigits: 0,
+  maximumFractionDigits: 0,
+});
